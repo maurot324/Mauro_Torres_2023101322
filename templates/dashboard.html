@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Dashboard - Venta de Ganados</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/ternero">Ternero</a></li>
+            <li><a href="/Novillito">Novillito</a></li>
+            <li><a href="/Novillo">Novillo</a></li>
+            <li><a href="/Vaquillona">Vaquillona</a></li>
+            <li><a href="/vaca">Vaca</a></li>
+            <li><a href="/Toro">Toro</a></li>
+            <li><a href="/register">Suscríbete</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Todo para Usted</h1>
+    </header>
+
+    <section id="carousel">
+        <h2>Ganado Destacado</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <a href="/ternero">
+                    <img src="{{ url_for('static', filename='img/product1.jpg') }}" alt="Ternero">
+                </a>
+                <a href="/ternero">
+                    <img src="{{ url_for('static', filename='img/product2.jpg') }}" alt="Ternero">
+                </a>
+                <a href="/ternero">
+                    <img src="{{ url_for('static', filename='img/product3.jpg') }}" alt="Ternero">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="categories">
+        <h2>Categorías de Ganado</h2>
+        <div class="brands-container">
+            <div class="brand">
+                <a href="/ternero">
+                    <img src="{{ url_for('static', filename='img/product1.jpg') }}" alt="Terneros">
+                    <p>Terneros</p>
+                </a>
+            </div>
+            <div class="brand">
+                <a href="/Novillito">
+                    <img src="{{ url_for('static', filename='img/novillito1.jpg') }}" alt="Novillitos">
+                    <p>Novillitos</p>
+                </a>
+            </div>
+            <div class="brand">
+                <a href="/Novillo">
+                    <img src="{{ url_for('static', filename='img/novillo1.jpg') }}" alt="Novillos">
+                    <p>Novillos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reproductive">
+        <h2>Ganado Reproductivo</h2>
+        <div class="brands-container">
+            <div class="brand">
+                <a href="/Vaquillona">
+                    <img src="{{ url_for('static', filename='img/vaquillona1.jpg') }}" alt="Vaquillonas">
+                    <p>Vaquillonas</p>
+                </a>
+            </div>
+            <div class="brand">
+                <a href="/vaca">
+                    <img src="{{ url_for('static', filename='img/vaca1.jpg') }}" alt="Vacas">
+                    <p>Vacas</p>
+                </a>
+            </div>
+            <div class="brand">
+                <a href="/Toro">
+                    <img src="{{ url_for('static', filename='img/toro1.jpg') }}" alt="Toros">
+                    <p>Toros Reproductores</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="info-container">
+            <div class="info-card">
+                <h3>Calidad Garantizada</h3>
+                <p>Ganado seleccionado con los más altos estándares de calidad genética y sanitaria</p>
+            </div>
+            <div class="info-card">
+                <h3>Asesoramiento Profesional</h3>
+                <p>Contamos con veterinarios y técnicos especializados para asesorarte</p>
+            </div>
+            <div class="info-card">
+                <h3>Mejores Precios</h3>
+                <p>Ofrecemos precios competitivos y facilidades de pago</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

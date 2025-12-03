@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Vacas en Venta</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/ternero">Ternero</a></li>
+            <li><a href="/Novillito">Novillito</a></li>
+            <li><a href="/Novillo">Novillo</a></li>
+            <li><a href="/Vaquillona">Vaquillona</a></li>
+            <li><a href="/vaca">Vaca</a></li>
+            <li><a href="/Toro">Toro</a></li>
+            <li><a href="/register">Suscríbete</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Vacas Disponibles</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/vaca1.jpg') }}" alt="Vaca 1">
+            <h2>Vaca 1</h2>
+            <p class="old-price">Antes: 9.500.000 Gs</p>
+            <p class="new-price">Ahora: 8.500.000 Gs</p>
+            <p class="availability available">Vaca lechera de alta producción</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/vaca2.jpg') }}" alt="Vaca 2">
+            <h2>Vaca 2</h2>
+            <p class="old-price">Antes: 10.000.000 Gs</p>
+            <p class="new-price">Ahora: 9.000.000 Gs</p>
+            <p class="availability available">Vaca con cría al pie</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/vaca3.jpg') }}" alt="Vaca 3">
+            <h2>Vaca 3</h2>
+            <p class="old-price">Antes: 9.800.000 Gs</p>
+            <p class="new-price">Ahora: 8.800.000 Gs</p>
+            <p class="availability available">Excelente madre reproductora</p>
+        </div>
+    </div>
+</body>
+</html>

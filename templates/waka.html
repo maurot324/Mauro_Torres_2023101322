@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Venta de Ganados</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/waka">Cementos</a></li>
+            <li><a href="/Oferta">En Oferta</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Materiales de Construcción - Cementos</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product1.jpg') }}" alt="CP VALLEMI">
+            <h2>CP VALLEMI</h2>
+            <p class="price">Precio: 60.000 Gs</p>
+            <p class="availability available">Disponible</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product2.jpg') }}" alt="CP YGUAZU">
+            <h2>CP YGUAZU</h2>
+            <p class="price">Precio: 58.000 Gs</p>
+            <p class="availability available">Disponible</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product3.jpg') }}" alt="CP CECON">
+            <h2>CP CECON</h2>
+            <p class="price">Precio: 56.000 Gs</p>
+            <p class="availability available">Disponible</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product4.jpg') }}" alt="CP UNO">
+            <h2>CP UNO</h2>
+            <p class="price">Precio: 55.000 Gs</p>
+            <p class="availability available">Disponible</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Ofertas Solo Hasta Agotar lote</title>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="/dashboard">Inicio</a></li>
+        <li><a href="/waka">Cementos</a></li>
+        <li><a href="/Oferta">En Oferta</a></li>
+        <li><a href="/herramientas">Herramientas</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="/logout">Cerrar Sesión</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>Venta por lote</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product1.jpg') }}" alt="CP VALLEMI">
+            <h2>Ternero 1</h2>
+            <p class="old-price">Antes: 4.800.000 Gs</p>
+            <p class="new-price">Ahora: 4.200.000 Gs</p>
+            <p class="availability available">Excelente ejemplar de raza premium</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product2.jpg') }}" alt="CP YGUAZU">
+            <h2>Ternero 2</h2>
+            <p class="old-price">Antes: 5.200.000 Gs</p>
+            <p class="new-price">Ahora: 4.500.000 Gs</p>
+            <p class="availability available">Genética superior de alta calidad</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product3.jpg') }}" alt="CP CECON">
+            <h2>Ternero 3</h2>
+            <p class="old-price">Antes: 4.500.000 Gs</p>
+            <p class="new-price">Ahora: 3.800.000 Gs</p>
+            <p class="availability available">Ejemplar robusto de excelente desarrollo</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product4.jpg') }}" alt="CP UNO">
+            <h2>Ternero 4</h2>
+            <p class="old-price">Antes: 5.500.000 Gs</p>
+            <p class="new-price">Ahora: 4.000.000 Gs</p>
+            <p class="availability available">La mejor especie joven</p>
+        </div>
+    </div>
+</body>
+</html>

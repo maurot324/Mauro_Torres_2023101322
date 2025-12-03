@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Novillitos en Venta</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/ternero">Ternero</a></li>
+            <li><a href="/Novillito">Novillito</a></li>
+            <li><a href="/Novillo">Novillo</a></li>
+            <li><a href="/Vaquillona">Vaquillona</a></li>
+            <li><a href="/vaca">Vaca</a></li>
+            <li><a href="/Toro">Toro</a></li>
+            <li><a href="/register">Suscríbete</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Novillitos Disponibles</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillito1.jpg') }}" alt="Novillito 1">
+            <h2>Novillito 1</h2>
+            <p class="old-price">Antes: 6.500.000 Gs</p>
+            <p class="new-price">Ahora: 5.800.000 Gs</p>
+            <p class="availability available">Ejemplar en desarrollo óptimo</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillito2.jpg') }}" alt="Novillito 2">
+            <h2>Novillito 2</h2>
+            <p class="old-price">Antes: 7.000.000 Gs</p>
+            <p class="new-price">Ahora: 6.200.000 Gs</p>
+            <p class="availability available">Excelente estructura y peso</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillito3.jpg') }}" alt="Novillito 3">
+            <h2>Novillito 3</h2>
+            <p class="old-price">Antes: 6.800.000 Gs</p>
+            <p class="new-price">Ahora: 6.000.000 Gs</p>
+            <p class="availability available">Alta calidad genética</p>
+        </div>
+    </div>
+</body>
+</html>

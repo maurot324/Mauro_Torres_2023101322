@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Novillos en Venta</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/ternero">Ternero</a></li>
+            <li><a href="/Novillito">Novillito</a></li>
+            <li><a href="/Novillo">Novillo</a></li>
+            <li><a href="/Vaquillona">Vaquillona</a></li>
+            <li><a href="/vaca">Vaca</a></li>
+            <li><a href="/Toro">Toro</a></li>
+            <li><a href="/register">Suscríbete</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Novillos Disponibles</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillo1.jpg') }}" alt="Novillo 1">
+            <h2>Novillo 1</h2>
+            <p class="old-price">Antes: 8.500.000 Gs</p>
+            <p class="new-price">Ahora: 7.500.000 Gs</p>
+            <p class="availability available">Novillo adulto de primera calidad</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillo2.jpg') }}" alt="Novillo 2">
+            <h2>Novillo 2</h2>
+            <p class="old-price">Antes: 9.000.000 Gs</p>
+            <p class="new-price">Ahora: 8.000.000 Gs</p>
+            <p class="availability available">Peso óptimo para faena</p>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/novillo3.jpg') }}" alt="Novillo 3">
+            <h2>Novillo 3</h2>
+            <p class="old-price">Antes: 8.800.000 Gs</p>
+            <p class="new-price">Ahora: 7.800.000 Gs</p>
+            <p class="availability available">Excelente conformación cárnica</p>
+        </div>
+    </div>
+</body>
+</html>
